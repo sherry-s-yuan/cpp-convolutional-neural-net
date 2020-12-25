@@ -1,0 +1,10 @@
+C:\Users\15475\OneDrive\Desktop\convolutional_network\convolutional_network\Debug\convolutional_network.exe
+C:\Users\15475\OneDrive\Desktop\convolutional_network\convolutional_network\Debug\convolutional_network.pdb
+C:\Users\15475\OneDrive\Desktop\convolutional_network\convolutional_network\Debug\convolutional_network.vcxproj.CopyComplete
+C:\Users\15475\OneDrive\Desktop\convolutional_network\convolutional_network\Debug\libpng16d.dll
+C:\Users\15475\OneDrive\Desktop\convolutional_network\convolutional_network\Debug\zlibd1.dll
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\convolutional_network.vcxproj.CopyComplete
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\convolutional_network.exe
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\convolutional_network.pdb
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\libpng16d.dll
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\zlibd1.dll

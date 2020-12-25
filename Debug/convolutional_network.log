@@ -1,0 +1,64 @@
+﻿  ConvolutionLayer.cpp
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ConvolutionLayer.cpp(33,56): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ConvolutionLayer.cpp(34,58): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ConvolutionLayer.cpp(35,57): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+  filterFactory.cpp
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\filterFactory.cpp(101,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\filterFactory.cpp(102,27): warning C4018: '<': signed/unsigned mismatch
+  ImageInput.cpp
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ImageInput.cpp(32,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ImageInput.cpp(33,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ImageInput.cpp(49,56): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ImageInput.cpp(50,58): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\ImageInput.cpp(51,57): warning C4244: '=': conversion from '_Ty' to 'T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=png::byte
+          ]
+  Layer.cpp
+  Generating Code...
+  convolutional_network.vcxproj -> C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\convolutional_network.exe

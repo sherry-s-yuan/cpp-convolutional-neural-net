@@ -144,12 +144,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConvolutionLayer.cpp" />
-    <ClCompile Include="filterFactory.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="Filter2D.cpp" />
+    <ClCompile Include="FilterFactory.cpp" />
     <ClCompile Include="ImageInput.cpp" />
     <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConvolutionLayer.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="Filter2D.h" />
+    <ClInclude Include="FilterFactory.h" />
     <ClInclude Include="ImageInput.h" />
     <ClInclude Include="Layer.h" />
   </ItemGroup>

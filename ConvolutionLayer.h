@@ -2,6 +2,7 @@
 #include "Layer.h"
 #include <vector>
 #include <list>
+#include "Filter2D.h"
 
 using namespace std;
 
@@ -15,14 +16,13 @@ class ConvolutionLayer:public Layer
 public:
     int channel, height, width, filterSize;
     int skip=1;
-    Matrix filter;
+    Filter2D filter;
     Layer inputLayer;
     Layer outputLayer;
     Image forwardOutput;
     Image backwardOutput;
     // initialize emtpy matrix from given dimension
     ConvolutionLayer(int fs, int s=1); // filter size, stride
-    ConvolutionLayer(Image inputImage);
 
     void saveImage(const char* filename);
     Image forward(Image convIn);

@@ -54,3 +54,10 @@ void ImageInput::saveImage(const char* filename) {
     imageFile.write(filename);
 }
 
+void ImageInput::forward(Image convIn) {
+    outputLayer.forward(forwardOutput);
+}
+
+void ImageInput::setOutputLayer(Layer out) {
+    outputLayer = out;
+}

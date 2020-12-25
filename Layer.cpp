@@ -7,9 +7,11 @@ typedef vector<double> Array;
 typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
-void Layer::forward() {
+void Layer::forward(Image convIn) {
+
 }
-void Layer::backward() {
+void Layer::backward(Image convIn) {
+
 }
 
 

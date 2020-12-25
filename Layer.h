@@ -10,8 +10,8 @@ typedef vector<Matrix> Image;
 class Layer
 {
 public:
-	void forward();
-	void backward();
+    virtual void forward(Image convIn);
+    virtual void backward(Image convIn);
 };
 
 

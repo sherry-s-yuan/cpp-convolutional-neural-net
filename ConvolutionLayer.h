@@ -17,16 +17,23 @@ public:
     int channel, height, width, filterSize;
     int skip=1;
     Filter2D filter;
-    Layer inputLayer;
-    Layer outputLayer;
+    Layer* inputLayer;
+    Layer* outputLayer;
+    Image forwardInput;
     Image forwardOutput;
     Image backwardOutput;
+    Image backwardInput;
+    bool hasInputLayer = false;
+    bool hasOutputLayer = false;
     // initialize emtpy matrix from given dimension
     ConvolutionLayer(int fs, int s=1); // filter size, stride
 
     void saveImage(const char* filename);
-    Image forward(Image convIn);
-    Image backward(Image convIn);
+    void forward(Image convIn);
+    void backward(Image convIn);
+
+    void setInputLayer(Layer* in);
+    void setOutputLayer(Layer* out);
 
 };
 

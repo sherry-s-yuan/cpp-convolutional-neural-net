@@ -1,5 +1,5 @@
 #pragma once
-#include "Filter.h"
+#include "Link.h"
 #include <vector>
 #include <cmath>
 #include <iostream>
@@ -12,7 +12,7 @@ typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
 class Filter2D :
-    public Filter
+    public Link
 {
 public:
     Matrix filter;

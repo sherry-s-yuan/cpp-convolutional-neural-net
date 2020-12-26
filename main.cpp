@@ -28,6 +28,8 @@ int main() {
     // Image image = loadImage("image.png");
     cout << "Applying filter..." << endl;
     convLayer1.forward(image.forwardOutput);
+
+    convLayer3.backward(convLayer3.forwardOutput);
     // convLayer.forwardOutput = convOut;
     cout << "Saving image..." << endl;
     convLayer3.saveImage("newImage.png");

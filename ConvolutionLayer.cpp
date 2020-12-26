@@ -47,7 +47,7 @@ void ConvolutionLayer::forward(Image convIn) {
 }
 
 void ConvolutionLayer::backward(Image dConvOut) {
-    Image dConvIn(3, Matrix(height, Array(width)));
+    Image dConvIn(3, Matrix(forwardInput[0].size(), Array(forwardInput[0][0].size())));
     backwardInput = dConvOut;
     
     int filterHeight = filter.filterSize;
@@ -74,12 +74,13 @@ void ConvolutionLayer::backward(Image dConvOut) {
                 for (h = imgRow; h < imgRow + filterHeight; h++) {
                     for (w = imgCol; w < imgCol + filterWidth; w++) {
                         // dFilter[h - imgRow][w - imgCol] += convIn[d][h][w] * backwardOutput[d][i][j];
-                        backwardOutput[d][h][w] += dConvOut[d][i][j] * filter.filter[h - imgRow][w - imgCol];
+                        dConvIn[d][h][w] += dConvOut[d][i][j] * filter.filter[h - imgRow][w - imgCol];
                     }
                 }
             }
         }
     }
+    backwardOutput = dConvIn;
     if (hasInputLayer)
         inputLayer->backward(backwardOutput);
 }

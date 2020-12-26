@@ -1,39 +1,38 @@
 #pragma once
 #include "Layer.h"
 #include <vector>
+#include <png++/png.hpp>
 #include <list>
+#include "ImageInput.h"
 #include "Filter2D.h"
-
 using namespace std;
 
 typedef vector<double> Array;
 typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
-
-class ConvolutionLayer:public Layer
+class Dense :
+    public Layer
 {
 public:
-    int channel, height, width, filterSize;
-    int skip=1;
-    Filter2D filter;
+    int inputDim, outputDim;
+    Matrix weight;
     Layer* inputLayer;
     Layer* outputLayer;
-    Image forwardInput;
-    Image forwardOutput;
-    Image backwardOutput;
-    Image backwardInput;
+    Matrix forwardInput;
+    Matrix forwardOutput;
+    Matrix backwardOutput;
+    Matrix backwardInput;
     bool hasInputLayer = false;
     bool hasOutputLayer = false;
     // initialize emtpy matrix from given dimension
-    ConvolutionLayer(int fs, int s=1); // filter size, stride
-
+    Dense(int inDim, int outDim); // filter size, stride
     void saveImage(const char* filename);
-    void forward(Image convIn);
-    void backward(Image dConvOut);
+
+    void forward(Matrix input);
+    void backward(Matrix dOutput);
 
     void setInputLayer(Layer* in);
     void setOutputLayer(Layer* out);
-
 };
 

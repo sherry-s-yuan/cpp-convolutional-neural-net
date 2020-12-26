@@ -7,7 +7,7 @@ typedef vector<double> Array;
 typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
-class Filter
+class Link
 {
 public:
 	Matrix filter;

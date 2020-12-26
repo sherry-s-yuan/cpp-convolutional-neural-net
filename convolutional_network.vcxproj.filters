@@ -24,9 +24,6 @@
     <ClCompile Include="ConvolutionLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Filter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Filter2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,6 +31,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FilterFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transformations\Dot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transformations\Transformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transformations\Transpose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,13 +59,25 @@
     <ClInclude Include="ConvolutionLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Filter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Filter2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FilterFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transformations\Dot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transformations\Transformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transformations\Transpose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -19,11 +19,19 @@ void Dense::saveImage(const char* filename) {
 }
 
 void Dense::forward(Matrix input) {
+    forwardInput = input;
     Dot dot = Dot();
     forwardOutput = dot.forward(input, weight);
+    if (hasOutputLayer)
+        outputLayer->forward(forwardOutput);
 }
 void Dense::backward(Matrix dOutput) {
-
+    backwardInput = dOutput;
+    Dot dot = Dot();
+    backwardOutput = dot.backwardInput(weight, dOutput);
+    Matrix dWeight = dot.backwardInput(forwardInput, dOutput);
+    if (hasInputLayer)
+        inputLayer->backward(backwardOutput);
 }
 
 void Dense::setInputLayer(Layer* in) {

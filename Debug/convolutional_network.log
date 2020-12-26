@@ -1,8 +1,2 @@
-﻿  Transformation.cpp
-  Transpose.cpp
-C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\transformations\Transpose.cpp(13,16): warning C4018: '<': signed/unsigned mismatch
-C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\transformations\Transpose.cpp(14,17): warning C4018: '<': signed/unsigned mismatch
-C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\transformations\Transpose.cpp(22,16): warning C4018: '<': signed/unsigned mismatch
-C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\transformations\Transpose.cpp(23,17): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  main.cpp
   convolutional_network.vcxproj -> C:\Users\15475\OneDrive\Desktop\convolutional_network\cpp-convolutional-neural-net\Debug\convolutional_network.exe

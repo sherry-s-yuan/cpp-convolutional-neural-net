@@ -2,6 +2,7 @@
 #include <vector>
 #include <assert.h>
 #include <cmath>
+#include "Dense.h"
 #include "ImageInput.h"
 #include "ConvolutionLayer.h"
 
@@ -25,10 +26,23 @@ int main() {
     convLayer3.setInputLayer(&convLayer2);
     convLayer2.setInputLayer(&convLayer1);
 
+    Dense dense1 = Dense(400, 5);
+    Dense dense2 = Dense(5, 2);
+    Dense dense3 = Dense(2, 1);
+
+    dense1.setOutputLayer(&dense2);
+    dense2.setOutputLayer(&dense3);
+    dense3.setInputLayer(&dense2);
+    dense2.setInputLayer(&dense1);
+
     // Image image = loadImage("image.png");
+    cout << "Dense Forward and Back..." << endl;
+    Matrix derivative = Matrix(400, Array(1));
+    dense1.forward(image.forwardOutput[0]);
+    dense3.backward(derivative);
+
     cout << "Applying filter..." << endl;
     convLayer1.forward(image.forwardOutput);
-
     convLayer3.backward(convLayer3.forwardOutput);
     // convLayer.forwardOutput = convOut;
     cout << "Saving image..." << endl;

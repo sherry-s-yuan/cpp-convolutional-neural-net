@@ -3,34 +3,32 @@
 #include <vector>
 #include <png++/png.hpp>
 #include <list>
-#include "ImageInput.h"
-#include "Filter2D.h"
+#include "../ImageInput.h"
+#include "../Links/Filter2D.h"
 using namespace std;
 
 typedef vector<double> Array;
 typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
-class Dense :
+class Squeeze :
     public Layer
 {
 public:
-    int inputDim, outputDim;
-    Matrix weight;
+    int squeezeDimension;
     Layer* inputLayer;
     Layer* outputLayer;
-    Matrix forwardInput;
+    Image forwardInput;
     Matrix forwardOutput;
-    Matrix backwardOutput;
+    Image backwardOutput;
     Matrix backwardInput;
     bool hasInputLayer = false;
     bool hasOutputLayer = false;
     // initialize emtpy matrix from given dimension
-    Dense(int inDim, int outDim); // filter size, stride
-    void saveImage(const char* filename);
+    Squeeze(int dim); // filter size, stride
 
-    void forward(Matrix input);
-    void backward(Matrix dOutput);
+    void forward(Image convIn);
+    void backward(Matrix dConvOut);
 
     void setInputLayer(Layer* in);
     void setOutputLayer(Layer* out);

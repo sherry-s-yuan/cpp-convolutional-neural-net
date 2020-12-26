@@ -15,105 +15,105 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Layer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ImageInput.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvolutionLayer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Filter2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FilterFactory.cpp">
+    <ClCompile Include="Transformations\Transpose.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dense.cpp">
+    <ClCompile Include="Transformations\Transformation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="transformations\Dot.cpp">
+    <ClCompile Include="Transformations\Dot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="transformations\Transformation.cpp">
+    <ClCompile Include="Losses\CrossEntropy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="transformations\Transpose.cpp">
+    <ClCompile Include="Losses\Loss.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Link.cpp">
+    <ClCompile Include="Layers\Squeeze.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Filter3D.cpp">
+    <ClCompile Include="Layers\Sigmoid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Filter.cpp">
+    <ClCompile Include="Layers\ConvolutionLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Squeeze.cpp">
+    <ClCompile Include="Layers\Dense.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="losses\Loss.cpp">
+    <ClCompile Include="Links\Filter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="losses\CrossEntropy.cpp">
+    <ClCompile Include="Links\Filter2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sigmoid.cpp">
+    <ClCompile Include="Links\Filter3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Links\FilterFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Links\Link.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Layers\Layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Layer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ImageInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConvolutionLayer.h">
+    <ClInclude Include="Transformations\Transpose.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Filter2D.h">
+    <ClInclude Include="Transformations\Transformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FilterFactory.h">
+    <ClInclude Include="Transformations\Dot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dense.h">
+    <ClInclude Include="Losses\CrossEntropy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="transformations\Dot.h">
+    <ClInclude Include="Losses\Loss.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="transformations\Transformation.h">
+    <ClInclude Include="Layers\Squeeze.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="transformations\Transpose.h">
+    <ClInclude Include="Layers\Sigmoid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Link.h">
+    <ClInclude Include="Layers\ConvolutionLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Filter3D.h">
+    <ClInclude Include="Layers\Dense.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Filter.h">
+    <ClInclude Include="Links\Filter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Squeeze.h">
+    <ClInclude Include="Links\Filter2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="losses\Loss.h">
+    <ClInclude Include="Links\Filter3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="losses\CrossEntropy.h">
+    <ClInclude Include="Links\FilterFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sigmoid.h">
+    <ClInclude Include="Links\Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Layers\Layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

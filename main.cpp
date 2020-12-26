@@ -2,12 +2,11 @@
 #include <vector>
 #include <assert.h>
 #include <cmath>
-#include "Dense.h"
-#include "ImageInput.h"
-#include "ConvolutionLayer.h"
-#include "Squeeze.h"
-#include "Sigmoid.h"
-#include "losses/CrossEntropy.h"
+#include "Layers/Dense.h"
+#include "Layers/ConvolutionLayer.h"
+#include "Layers/Squeeze.h"
+#include "Layers/Sigmoid.h"
+#include "Losses/CrossEntropy.h"
 
 using namespace std;
 

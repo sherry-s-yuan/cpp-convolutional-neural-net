@@ -2,8 +2,8 @@
 #include <vector>
 #include <png++/png.hpp>
 #include <list>
-#include "ImageInput.h"
-#include "Filter2D.h"
+#include "../ImageInput.h"
+#include "../Links/Filter2D.h"
 using namespace std;
 
 typedef vector<double> Array;

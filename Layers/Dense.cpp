@@ -2,9 +2,9 @@
 #include <vector>
 #include <png++/png.hpp>
 #include <list>
-#include "ImageInput.h"
-#include "Filter2D.h"
-#include "transformations/Dot.h"
+#include "../ImageInput.h"
+#include "../Links/Filter2D.h"
+#include "../Transformations/Dot.h"
 using namespace std;
 
 typedef vector<double> Array;

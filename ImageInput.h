@@ -1,7 +1,7 @@
 #pragma once
-#include "Layer.h"
+#include "Layers/Layer.h"
 #include <vector>
-#include "Filter2D.h"
+#include "Links/Filter2D.h"
 
 using namespace std;
 

@@ -144,7 +144,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConvolutionLayer.cpp" />
+    <ClCompile Include="losses\CrossEntropy.cpp" />
     <ClCompile Include="Dense.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="Filter3D.cpp" />
+    <ClCompile Include="losses\Loss.cpp" />
+    <ClCompile Include="Sigmoid.cpp" />
+    <ClCompile Include="Squeeze.cpp" />
     <ClCompile Include="transformations\Transformation.cpp" />
     <ClCompile Include="transformations\Dot.cpp" />
     <ClCompile Include="Link.cpp" />
@@ -157,7 +163,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConvolutionLayer.h" />
+    <ClInclude Include="losses\CrossEntropy.h" />
     <ClInclude Include="Dense.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="Filter3D.h" />
+    <ClInclude Include="losses\Loss.h" />
+    <ClInclude Include="Sigmoid.h" />
+    <ClInclude Include="Squeeze.h" />
     <ClInclude Include="transformations\Transformation.h" />
     <ClInclude Include="transformations\Dot.h" />
     <ClInclude Include="Link.h" />

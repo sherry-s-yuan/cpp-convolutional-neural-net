@@ -8,13 +8,13 @@
 
 Filter2D::Filter2D() {
     FilterFactory filterFactory = FilterFactory();
-    filter = filterFactory.construct2D("gaussian", 5);
+    filter = filterFactory.construct2D("gaussian", 5, 5, 1);
     filterSize = 5;
 }
 
 Filter2D::Filter2D(int fs, string filterType) {
 	FilterFactory filterFactory = FilterFactory();
-	filter = filterFactory.construct2D(filterType, fs);
+	filter = filterFactory.construct2D(filterType, fs, fs, 1);
 	filterSize = fs;
 }
 
@@ -65,8 +65,8 @@ Matrix Filter2D::backward(Image dConvOut, Image convIn, int skip) {
     // for each channel (3) calculate derivative with respect to X and F
     for (d = 0; d < 3; d++) {
         // loop through each index of outputConv's derivative
-        for (i = 0; i < dConvOut[0].size(); i++) {
-            for (j = 0; j < dConvOut[0][0].size(); j++) {
+        for (i = 0; i < convOutHeight; i++) {
+            for (j = 0; j < convOutWidth; j++) {
                 // apply filter
                 int imgRow = i * skip;
                 int imgCol = j * skip;

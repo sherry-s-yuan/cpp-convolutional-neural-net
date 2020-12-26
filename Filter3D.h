@@ -1,5 +1,6 @@
 #pragma once
 #include "Filter.h"
+#include "FilterFactory.h"
 #include <vector>
 #include <cmath>
 #include <iostream>
@@ -11,16 +12,19 @@ typedef vector<double> Array;
 typedef vector<Array> Matrix;
 typedef vector<Matrix> Image;
 
-class Filter2D :
+class Filter3D :
     public Filter
 {
 public:
-    Matrix filter;
-    Matrix dFilter;
+    Image filter;
+    Image dFilter;
     int filterSize;
-    Filter2D(int fs, string filterType);
-    Filter2D();
+    int filterChannel;
+    int inChannel, outChannel;
+    Filter3D(int ic, int oc, int fs, string filterType);
+    Filter3D();
     Image forward(Image convIn, int skip);
-    Matrix backward(Image dConvOut, Image convIn, int skip);
+    Image backward(Image dConvOut, Image convIn, int skip);
+
 };
 
